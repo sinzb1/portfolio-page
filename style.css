@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -54,10 +54,17 @@ h2 {
   color: #333;
 }
 
+h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 p {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
+  text-align: justify;
 }
 
 footer {
@@ -80,5 +87,44 @@ footer {
 }
 
 .secrtion-intro {
-  height: 20vh;
+  height: 40vh;
+}
+
+section#contact form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Ändere die maximale Breite nach deinen Wünschen */
+  margin: 0 auto; /* Zentriere das Formular horizontal */
+}
+
+section#contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+section#contact form input[type="text"],
+section#contact form input[type="email"],
+section#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section#contact form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section#contact form input[type="submit"]:hover {
+  background-color: #555;
 }
