@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: auto;
   margin: 0 auto;
   padding: 20px;
 }
@@ -27,7 +27,7 @@ header {
   align-items: stretch;
 }
 
-nav ul {
+Nav ul {
   list-style: none;
   margin-top: 20px;
 }
@@ -58,6 +58,7 @@ h3 {
   font-size: 22px;
   margin-bottom: 20px;
   color: #333;
+  text-align: left;
 }
 
 p {
@@ -97,8 +98,8 @@ section#contact form {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Ändere die maximale Breite nach deinen Wünschen */
-  margin: 0 auto; /* Zentriere das Formular horizontal */
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 section#contact form label {
@@ -127,4 +128,22 @@ section#contact form input[type="submit"] {
 
 section#contact form input[type="submit"]:hover {
   background-color: #555;
+}
+
+table-container {
+  border-collapse: collapse;
+  width: auto;
+  table-layout: auto;
+  justify-content: center;
+  align-items: center;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+ul.Kompezenten {
+  text-align: left;
 }
