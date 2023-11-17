@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -270,6 +272,25 @@
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Programmiersprachen
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="Kompezenten">
+                  <li>Im Verlauf meines Studiums habe ich bereits Erfahrung mit verschiedenen Programmiersprachen gesammelt. Im Folgenden 
+                    finden Sie eine Liste der mir vertrauten Programmiersprachen und meiner jeweiligen Beherrschung in diesen:</li>
+                </ul>
+                <canvas id="myChart" width="400" height="400"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chart-container">
+
         </div>
     </section>
 
@@ -323,7 +344,9 @@
     <section id="contact" class="section">
       <div class="container">
         <h2>Kontakt</h2>
-        <p>Du kannst mich unter kontakt@example.com erreichen.</p>
+        <p>Habe ich dein Interesse geweckt? Ich freue mich über eine Kontaktaufnahme und stehe dir gerne über eind der
+          folgenden Möglichkeiten zur Verfügung.
+        </p>
         <h3>Kontaktformular</h3>
         <form action="#" method="post">
           <label for="name">Name:</label>
