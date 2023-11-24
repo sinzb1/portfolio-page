@@ -63,3 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+function openEmail() {
+  var name = document.getElementById("name").value;
+  var subject = document.getElementById("subject").value;
+  var message = "Diese Nachricht wurde versendet von" + name + "\n";
+  message += document.getElementById("message").value;
+  window.location = "mailto:?subject=" + subject + "&body=" + message;
+}

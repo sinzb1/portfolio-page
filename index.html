@@ -19,8 +19,8 @@
     <header>
       <nav>
         <h1>Basil Lionel Sinzig</h1>
-        <div class="row justify-content-end">
-          <div class="col-12">
+        <div class="row justify-content-end p-0 m-0">
+          <div class="col-12 ">
             <ul class="Nav">
               <li><a href="#about">Über mich</a></li>
               <li><a href="#Werdegang">Werdegang</a></li>
@@ -36,13 +36,10 @@
     <section id="about" class="section">
       <div class="container section-intro">
         <h2 class="special">Hallo, ich bin Basil!</h2>
-        <div class="row">
-          <div class="col-3">
-            <img src="Pictures/basil.jpg" alt="Profilbild" class="basil" />
-          </div>
-          <div class="col-6">
+        <div class="row mt-5">
+          <div class="offset-1 col-6">
             <p>
-              Ich bin Basil, 23 Jahre alt und derzeit im 5. Semester meines
+              Ich bin Basilll, 23 Jahre alt und derzeit im 5. Semester meines
               Bachelorstudiums in Wirtschaftsinformatik an der Berner
               Fachhochschule (BFH) in Bern, Schweiz.
             </p>
@@ -81,7 +78,9 @@
               beizutragen, innovative Technologien und Prozesse voranzutreiben
             </p>
           </div>
-          <div class="col-3"></div>
+          <div class="offset-1 col-4">
+            <img src="Pictures/basil.jpg" alt="Profilbild" class="basil" />
+          </div>
         </div>
       </div>
     </section>
@@ -179,7 +178,7 @@
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button setColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Fachkompetenzen
               </button>
             </h2>
@@ -214,7 +213,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="accordion-button collapsed setColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Methodenkompetenzen
               </button>
             </h2>
@@ -237,7 +236,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="accordion-button collapsed setColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Sozial und Selbstkompetenzen
               </button>
             </h2>
@@ -258,7 +257,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button class="accordion-button collapsed setColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Sprachen
               </button>
             </h2>
@@ -274,7 +273,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <button class="accordion-button collapsed setColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 Programmiersprachen
               </button>
             </h2>
@@ -344,16 +343,12 @@
     <section id="contact" class="section">
       <div class="container">
         <h2>Kontakt</h2>
-        <p>Habe ich dein Interesse geweckt? Ich freue mich über eine Kontaktaufnahme und stehe dir gerne über eind der
-          folgenden Möglichkeiten zur Verfügung.
-        </p>
-        <h3>Kontaktformular</h3>
-        <form action="#" method="post">
+        <form method="get" onsubmit="openEmail()">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
-          <label for="email">E-Mail:</label>
-          <input type="email" id="email" name="email" required />
+          <label for="subject">Betreff:</label>
+          <input type="text" id="subject" name="subject" required />
 
           <label for="message">Nachricht:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
@@ -364,9 +359,11 @@
     </section>
 
     <footer>
-      <div class="container">
-        <p>&copy; 2023 Mein Portfolio</p>
-        <div class="col-12">
+      <div class="row m-0 p-0">
+        <div class="col-6">
+          <p class="text-center">&copy; 2023 Basil Sinzig - Alle Rechte vorbehalten</p>
+        </div>
+        <div class="col-6">
           <a
             href="https://www.linkedin.com/in/basil-lionel-sinzig-aa9a66275/"
             target="_blank"
