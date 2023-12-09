@@ -213,3 +213,15 @@ a:hover {
 .text-center {
   color: white;
 }
+
+.btn-primary {
+  background-color: #ffffff7a;
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #cccccc;
+  border-color: #999999;
+  color: #000000;
+}
