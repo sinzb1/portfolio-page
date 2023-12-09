@@ -71,18 +71,3 @@ function openEmail() {
   message += document.getElementById("message").value;
   window.location = "mailto:?subject=" + subject + "&body=" + message;
 }
-
-// Verwende jQuery, um das DOM zu manipulieren
-$(document).ready(function () {
-  // Füge einen Event Listener hinzu, der auf das 'mouseenter' Ereignis reagiert
-  $(".card").mouseenter(function () {
-    // Ändere die Höhe der Karte auf 110% des ursprünglichen Wertes
-    $(this).css("height", "110%");
-  });
-
-  // Füge einen Event Listener hinzu, der auf das 'mouseleave' Ereignis reagiert
-  $(".card").mouseleave(function () {
-    // Setze die Höhe der Karte auf den ursprünglichen Wert zurück
-    $(this).css("height", "");
-  });
-});
