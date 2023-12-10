@@ -214,14 +214,16 @@ a:hover {
   color: white;
 }
 
-.btn-primary {
+.btn-primary-certificate {
   background-color: #ffffff7a;
   border-color: #000000;
   color: #000000;
 }
 
-.btn-primary:hover {
+.btn-primary-certificate:hover,
+.btn-primary-certificate:active:focus {
   background-color: #cccccc;
   border-color: #999999;
   color: #000000;
+  box-shadow: none;
 }

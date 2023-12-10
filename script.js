@@ -71,3 +71,19 @@ function openEmail() {
   message += document.getElementById("message").value;
   window.location = "mailto:?subject=" + subject + "&body=" + message;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var text = document.querySelector(".special").textContent;
+  document.querySelector(".special").textContent = "";
+
+  for (var i = 0; i < text.length; i++) {
+    var delay = i * 150;
+    setTimeout(
+      function (index) {
+        document.querySelector(".special").textContent += text[index];
+      },
+      delay,
+      i
+    );
+  }
+});
