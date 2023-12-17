@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var canvas = document.getElementById("myChart");
 
-  canvas.height = 130;
+  canvas.height = 160;
 
   var ctx = canvas.getContext("2d");
   var myChart = new Chart(ctx, {
@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: true,
       indexAxis: "y",
       scales: {
         x: {
