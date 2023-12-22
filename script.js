@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var canvas = document.getElementById("myChart");
 
-  canvas.height = 160;
+  canvas.height = 80;
 
   var ctx = canvas.getContext("2d");
   var myChart = new Chart(ctx, {
